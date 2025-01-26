@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  travel-dashboard:
+    build: .
+    environment:
+      - ES_HOST=
+      - ES_USERNAME=elastic
+      - ES_PASSWORD=
+      - WEATHER_API_KEY=
+      - AVIATIONSTACK_API_KEY=
+    restart: always
